@@ -1,0 +1,97 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, .container {
+    font-family: "Arimo", sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 1.5rem;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Talent item container */
+.talent-item {
+    background-color: #ffffff;
+    border-radius: 0.875rem; /* 14px */
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Add margin bottom */
+}
+
+/* Profile image container */
+.talent-item .p-4 {
+    padding: 1.5rem; /* Adjusted padding for profile image container */
+}
+
+/* Talent details container */
+.talent-item .talent-details {
+    flex-grow: 1;
+    padding: 1rem; /* Adjusted padding for talent details container */
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Move the button to the right */
+}
+
+/* Profile image */
+.talent-item img {
+    width: 3rem; /* 48px */
+    height: 3rem; /* 48px */
+    border-radius: 50%;
+}
+
+/* Profile name, skill and rate */
+.talent-item h1, .talent-item p {
+    margin: 0;
+}
+
+/* Skill */
+.talent-item .skill {
+    color: #666666;
+}
+
+/* Responsiveness */
+@media (max-width: 1200px) {
+    .container {
+        padding: 0 10px; /* Adjust padding for smaller container width */
+    }
+    
+    .talent-item .p-4 {
+        padding: 1rem; /* Adjust padding for profile image container */
+    }
+
+    .talent-item .talent-details {
+        padding: 1rem; /* Adjust padding for talent details container */
+    }
+}
+
+/* Background container */
+.bg-container {
+    background-color:#DDA0DD;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border-radius: 13.691px;
+    margin-top: 20px; /* Added margin top to separate from talent items */
+}
+
+/* Go Pro button */
+.btn-primary {
+    color: var(--white);
+    background-color: var(--primary);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+}

@@ -1,0 +1,111 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+/* Hero Section Styles */
+.hero-section {
+  background-image: url('./Assets/Designer (52).jpeg');
+  background-size: contain; /* Change to contain or specify dimensions */
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 400px; /* Adjust the height as needed */
+  color: white;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.custom-card {
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 45%;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: left; /* Ensure text is left-aligned */
+}
+
+.custom-card p {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.custom-card a, .custom-card button {
+  display: inline-block;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .hero-section {
+    height: auto; /* Adjust for smaller screens */
+    padding: 30px 0;
+  }
+
+  .hero-section h2 {
+    font-size: 1.5rem;
+  }
+
+  .container {
+    padding: 0 20px; /* Adjust container padding for smaller screens */
+  }
+
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .custom-card {
+    width: 80%;
+    margin: 10px 0;
+    text-align: center; /* Center-align text on smaller screens */
+  }
+
+  .custom-card p {
+    text-align: center; /* Center-align paragraph text */
+  }
+
+  .custom-card a, .custom-card button {
+    display: block;
+    margin: 10px auto;
+  }
+
+  .custom-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

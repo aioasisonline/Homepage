@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+  font-family: 'Roots Text', sans-serif;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 20px 15px 50px; /* Adjust padding */
+}
+
+.section_5.wrapper {
+  text-align: center;
+  background-color: var(--stone-pink);
+}
+
+/* Update font size for smaller screens */
+@media (max-width: 767px) {
+  .section_5.wrapper {
+    padding-bottom: 30px; /* Adjust padding */
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Update font size for smaller screens */
+@media (max-width: 767px) {
+  .flex {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Update font size for smaller screens */
+@media (max-width: 767px) {
+  h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+}
+
+.explore-button {
+  background-color: #920892;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 2rem;
+  margin-bottom: 100px;
+}
+
+/* Update button style for smaller screens */
+@media (max-width: 767px) {
+  .explore-button {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 10px 15px;
+  }
+}
+
+.explore-button:hover {
+  background-color: #6d156d;
+}
+
+.grid {
+  display: grid;
+  grid-template-rows: 1fr;
+  overflow: hidden;
+}
+
+.border {
+  border-width: 8.83px;
+  border-style: solid;
+  border-radius: 8.3px;
+  border-color: #D0BEBE;
+}
+
+.border-b {
+  border-bottom-width: 0.83px;
+  border-bottom-style: solid;
+  border-bottom-color: #DBEBE5;
+}
+
+.text {
+  color: #038303;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text- {
+  color: #000000;
+}
+
+.font-Satoshi500,
+.font-Satoshi400,
+.font-Satoshi580 {
+  font-family: 'Satoshi', sans-serif;
+}
+
+p {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 16.599px;
+  margin-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+  color: #333;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.flex > *:not(:last-child) {
+  margin-right: 120px;
+}
+
+.object-cover {
+  height: 30px;
+  width: 30px;
+}
+
+.flex.items-center {
+  margin-top: 20px;
+}
+
+.flex.gap-1 {
+  gap: 10px;
+}
+
+.flex.items-center > p.flex {
+  flex: 1;
+}
+
+.flex {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.flex.justify-center {
+  justify-content: center;
+}
+
+.text- {
+  font-size: 13.279px;
+}
+
+.leading- {
+  line-height: 16.599px;
+}
+
+.pt-8 {
+  padding-top: 8px;
+  margin-top: 20px;
+}
+
+/* Additional styles for What's New section */
+.what-new-section {
+  font-size: 4rem;
+  padding: 20px 0;
+  margin-bottom: 10px;
+}
+
+/* Update font size for What's New section on smaller screens */
+@media (max-width: 767px) {
+  .what-new-section {
+    font-size: 1.5rem;
+    padding-bottom: 20px;
+  }
+}
+
+.pt-8 {
+  padding-top: 8px;
+  margin-top: 20px;
+}
+
+@media (max-width: 767px) {
+  .pt-8 {
+    padding-top: 20px;
+    margin-top: 50px;
+  }
+}
+
+/* Update font size and padding for the "Do you want to get a tool for your company?" section on smaller screens */
+@media (max-width: 767px) {
+  .bg-{
+    padding: 15px;
+    border-radius: 20px;
+  }
+
+  .text- {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0
+ }
+
+h1, h3 {
+  margin: 0 0 15px 0;
+}
+
+/* Section 6 Styles */
+.section_6 {
+  margin-top: 50px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section_6 img {
+  max-width: 100%;
+  height: 750px;
+  object-fit: cover;
+  border-radius: 8px; /* Round the edges */
+}
+
+.section_6_right {
+  width: 50%;
+  padding: 30px;
+  background-color: var(--primary-dark);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.section_6_right hr {
+  margin: 30px 0; /* Reduce spacing before and after the line for mobile */
+}
+
+.section_6_right_top {
+  margin-bottom: 20px; 
+  color: white;/* Reduce space between header and paragraphs for mobile */
+}
+
+.section_6_right_top h1 {
+  font-size: 40px; /* Adjust font size for mobile */
+}
+
+.section_6_right_middle {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  gap: 15px; /* Reduce space between paragraphs for mobile */
+}
+
+.section_6_right_bottom {
+  margin-top: auto; /* Align the button at the bottom */
+}
+
+.section_6_right_bottom button {
+  padding: 12px 28px; /* Adjust button padding for mobile */
+}
+
+.section_6_left {
+  width: 50%;
+}
+
+@media (max-width: 767px) {
+  .section_6 {
+    flex-direction: column;
+  }
+
+  .section_6_right,
+  .section_6_left {
+    width: 100%;
+    padding: 20px; /* Adjust padding for mobile */
+    text-align: left; /* Center content for mobile */
+  }
+
+  .section_6_right_top h1 {
+    font-size: 32px; /* Further adjust font size for smaller screens */
+  }
+
+  .section_6_right_bottom button {
+    width: 100%; /* Make button full width for mobile */
+  }
+}

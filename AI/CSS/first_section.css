@@ -1,0 +1,37 @@
+.container{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    padding-left: 1000%;
+}
+
+.bg-white {
+    background-color: white;
+  }
+/* CSS */
+.custom-card {
+    padding: 0.5rem; /* Adjust padding as needed */
+    border-radius: 0.5rem; /* Adjust border radius as needed */
+  }
+  
+  .custom-card p {
+    font-size: 1rem; /* Adjust font size as needed */
+    margin-bottom: 0.5rem; /* Adjust margin as needed */
+  }
+  
+  .custom-card a {
+    font-size: 1rem; /* Adjust font size as needed */
+    padding: 0.5rem 1rem; /* Adjust padding as needed */
+  }
+  
+
+.py-20 {
+    padding-top: 100px;
+    padding-bottom: 20px;
+}

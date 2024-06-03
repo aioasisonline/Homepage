@@ -1,0 +1,156 @@
+/* Section 1 css start */
+.section_1_bottom {
+  position: relative;
+  margin-top: 50px; /* Adjust margin to ensure the section is below the header */
+}
+
+.section_1_bottom_right {
+  position: relative;
+}
+
+.section_1_bottom_right img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.section_1_bottom_right .section_1_bottom_right_bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.section_1_bottom_left {
+  position: absolute;
+  top: 50%;
+  left: 10%; /* Adjust this value to keep the text on the left */
+  transform: translateY(-50%);
+  z-index: 2;
+  color: white;
+  text-align: left; /* Ensure text is left-aligned */
+  padding: 0 1rem; /* Add padding for small screens */
+  max-width: 90%; /* Ensure the content doesn't spill out */
+}
+
+.section_1_bottom_left h1 {
+  color: var(--white);
+  font-size: 5rem;
+  margin-bottom: 20px;
+}
+
+.section_1_bottom_left h3 {
+  line-height: 32px;
+  font-weight: 500;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.section_1_bottom_left .section_1_bottom_left_btns a {
+  margin-right: 2rem;
+}
+
+.carousel-container {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+
+.carousel-container img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.5s ease-in-out;
+}
+
+/* Hide all images except the first one */
+.carousel-container img:not(:first-child) {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* Add animation to images */
+.carousel-container img.active {
+  opacity: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .section_1_bottom_left h1 {
+      font-size: 4rem;
+  }
+  .section_1_bottom_left h3 {
+      font-size: 1.6rem;
+  }
+  .section_1_bottom_left {
+      left: 8%; /* Adjust left position for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .section_1_bottom_left h1 {
+      font-size: 3.5rem;
+  }
+  .section_1_bottom_left h3 {
+      font-size: 1.5rem;
+  }
+  .section_1_bottom_left {
+      left: 6%; /* Adjust left position for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .section_1_bottom_left h1 {
+      font-size: 3rem;
+  }
+  .section_1_bottom_left h3 {
+      font-size: 1.4rem;
+  }
+  .section_1_bottom_left {
+      left: 4%; /* Adjust left position for smaller screens */
+      padding: 0 1.5rem;
+  }
+  .section_1_bottom {
+      margin-top: 40px; /* Adjust top margin for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .section_1_bottom_left h1 {
+      font-size: 2.5rem;
+  }
+  .section_1_bottom_left h3 {
+      font-size: 1.2rem;
+      line-height: 28px;
+  }
+  .section_1_bottom_left {
+      left: 3%; /* Adjust left position for smaller screens */
+      padding: 0 1rem;
+  }
+  .section_1_bottom {
+      margin-top: 30px; /* Adjust top margin for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .section_1_bottom_left h1 {
+      font-size: 2rem;
+  }
+  .section_1_bottom_left h3 {
+      font-size: 1rem;
+      line-height: 24px;
+  }
+  .section_1_bottom_left {
+      left: 2%; /* Adjust left position for smaller screens */
+      padding: 0 0.5rem;
+  }
+  .section_1_bottom {
+      margin-top: 20px; /* Adjust top margin for smaller screens */
+  }
+}
+/* Section 1 css end */

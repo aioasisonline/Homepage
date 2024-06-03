@@ -1,0 +1,81 @@
+/* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Hero section styles */
+.hero-section {
+  min-height: 400px;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: left;
+  padding-right: 600px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  margin-top: 80px;
+}
+
+/* Text styles */
+.hero-section h2 {
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 2rem;
+  margin-right: 200px;
+  
+}
+
+.hero-section p {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+/* Custom card styles */
+.card-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+
+.custom-card {
+  background-color: #920892;;
+  border-radius: 0.875rem;
+  padding: 10px;
+  flex: 0 0 calc(50% - 20px);
+}
+
+.custom-card p {
+  font-size: 1.125rem;
+  margin-bottom: 1rem;
+}
+
+.custom-card a {
+  display: block;
+  padding: 10px 20px;
+  border-radius: 0.875rem;
+  text-align: center;
+}
+
+.custom-card a.text-blue-500 {
+  background-color: #fff;;
+  color:#920892;
+}
+
+.custom-card a.text-white {
+  background-color: #fff;
+  color: #920892;
+}
+
+/* Purple text style */
+.purple-text {
+  color: #920892; 
+}

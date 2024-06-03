@@ -1,0 +1,87 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.background {
+    background-size: cover;
+    background-position: center;
+}
+
+/* Section Styles */
+.section {
+    padding: 20px 0; /* Reduced padding */
+}
+
+.section h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.section p {
+    font-size: 18px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.section img {
+    border-radius: 10px;
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+/* Flexbox Styles for Side-by-Side Layout */
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-container > div {
+    flex: 0 0 100%; /* Full width on small screens */
+    margin-bottom: 20px;
+}
+
+.flex-container img {
+    width: 100%;
+}
+
+/* Background Colors */
+.summary-section {
+    background-color: #E6E6FA; /* Light purple */
+}
+
+.roadmap-section {
+    background-color: #D8BFD8; /* Light purple */
+}
+
+.whitepaper-section {
+    background-color: #DDA0DD; /* Light purple */
+}
+
+/* Media Query for Smaller Screens */
+@media (min-width: 768px) {
+    .flex-container > div {
+        flex: 0 0 calc(50% - 10px); /* Side-by-side on medium and larger screens */
+        margin-bottom: 0;
+    }
+
+    .summary-section,
+    .roadmap-section,
+    .whitepaper-section {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+}
