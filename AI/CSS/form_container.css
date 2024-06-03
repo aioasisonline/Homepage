@@ -1,0 +1,117 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+.form-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap */
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #DDA0DD;
+}
+
+.form-section {
+    flex: 1 0 calc(60% - 10px); /* Adjust width to 60% */
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px; /* Add margin bottom to create space between sections */
+}
+
+.form-section-left h1 {
+    margin-bottom: 20px; /* Adjust margin for h1 */
+}
+
+.form-separator {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 20px 0;
+}
+
+.form-section-details {
+    margin-top: 20px;
+}
+
+.categories-wrapper {
+    margin-bottom: 20px;
+}
+
+.category-dropdown {
+    margin-bottom: 10px;
+    display: inline-block;
+    width: 100%; /* Change width to 100% for mobile */
+}
+
+.select-box-wrapper {
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.select-box {
+    width: 100%;
+    padding: 8px; /* Adjust padding as needed */
+    border: none;
+    background-color: #fff;
+    font-size: 12px; /* Adjust font size as needed */
+    color: #333;
+}
+
+.form-aside {
+    flex: 0 0 300px;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin bottom for space */
+}
+
+.form-aside h4 {
+    margin-bottom: 20px;
+}
+
+.poster {
+    margin-top: 20px;
+}
+
+.poster ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.poster ul li {
+    margin-bottom: 10px;
+}
+
+.poster p {
+    margin-top: 10px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Query for smaller screens */
+@media screen and (max-width: 768px) {
+    .form-section {
+        flex: 1 0 100%; /* Adjust to full width for smaller screens */
+        margin-right: 0; /* Remove right margin */
+    }
+
+    .form-aside {
+        flex: 1 0 100%; /* Adjust to full width for smaller screens */
+        margin-right: 0; /* Remove right margin */
+    }
+}

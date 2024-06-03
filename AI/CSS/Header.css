@@ -1,0 +1,179 @@
+/* Header CSS Start */
+.header {
+  font-size: 1.4rem;
+  position: fixed;
+  width: 100%;
+  padding: 0 1rem;
+  background-color: var(--white);
+  z-index: 101;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  top: 0;
+}
+
+.header_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 70px;
+  border-bottom: 1px solid var(--grey-light);
+}
+
+.header_left {
+  display: flex;
+  align-items: center;
+}
+
+.header_left img {
+  height: 2.5rem;
+}
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  margin-left: 1rem;
+}
+
+.header_left_list {
+  display: flex;
+  align-items: center;
+  margin-left: 2rem;
+  color: var(--grey);
+  font-weight: 500;
+}
+
+.header_left_list_item {
+  display: flex;
+  align-items: center;
+  margin: 0 1.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.header_left_list_item a {
+  color: black;
+  text-decoration: none;
+}
+
+.header_left_list_item img {
+  width: 12px;
+  height: auto;
+  margin-left: 0.5rem;
+}
+
+.header_left_list_item button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: black;
+}
+
+.header_left_list_item:hover {
+  color: var(--primary-dark);
+  text-decoration: underline;
+}
+
+.header_right {
+  display: flex;
+  align-items: center;
+}
+
+.header_search {
+  position: relative;
+  width: var(--input-form-width);
+  margin-right: 1rem;
+}
+
+.search_input {
+  height: var(--input-height);
+  width: 100%;
+  padding-left: 5rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+}
+
+.search_input::placeholder {
+  font-weight: 700;
+  padding: 0.8rem;
+}
+
+.search_icons {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 11px;
+  left: 16px;
+}
+
+.search_icons .icon:nth-child(1) {
+  width: 20px;
+}
+
+.search_icons .icon:nth-child(2) {
+  width: 12px;
+}
+
+.header_right_btns {
+  display: flex;
+}
+
+.mobile_menu {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  .header_wrapper {
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    display: inline-block;
+  }
+
+  .header_search,
+  .header_right_btns {
+    display: none !important; /* Hide these elements in the main header on mobile */
+  }
+
+  .header_left_list {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header_left_list_item {
+    margin: 1rem 0;
+  }
+
+  .mobile_menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .mobile_menu.show {
+    display: flex; /* Show mobile menu items when .show is added */
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .header_search {
+    display: block; /* Show search on larger screens */
+  }
+
+  .header_right_btns {
+    display: flex;
+  }
+
+  .header_left_list {
+    display: flex; /* Ensure header list items are displayed on larger screens */
+    margin-left: 2rem;
+  }
+
+  .mobile_menu {
+    display: none;
+  }
+}
+/* Header CSS End */

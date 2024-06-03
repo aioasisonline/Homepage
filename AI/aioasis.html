@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./Assets/AI OASIS 2.png" />
+    <link rel="stylesheet" href="./CSS/index.css" />
+    <title>AI Oasis | The World's AI Marketplace</title>
+  </head> 
+</head>
+<body>
+  <header class="header">
+    <div class="header_wrapper wrapper">
+      <div class="header_left">
+        <img src="./Assets/AI OASIS 2.png" alt="Logo" />
+        <button class="hamburger" aria-label="Toggle menu" onclick="toggleMenu()">
+          <img src="./Assets/burger-menu-svgrepo-com.svg" alt="Menu" />
+        </button>
+        <ul class="header_left_list">
+          <li class="header_left_list_item">
+            <a href="./findtool.html">Find Tool</a>
+          </li>
+          <li class="header_left_list_item">
+            <a href="./hiretalent.html">Hire Talent</a>
+          </li>
+          <li class="header_left_list_item">
+            <a href="./aioasis.html">AI-Oasis</a>
+          </li>
+        </ul>
+      </div>
+      <div class="header_right">
+        <div class="header_search">
+          <input type="search" placeholder="Search" name="search" class="search_input">
+          <div class="search_icons">
+            <img src="./Assets/Search_icon.png" alt="Search Icon" class="icon">
+            <img src="./Assets/dropdown_icon.png" alt="Dropdown Icon" class="icon">
+          </div>
+        </div>
+        <div class="header_right_btns">
+          <button class="btn_secondary_outline">Log In</button>
+          <a href="https://docs.google.com/forms/d/1PfHA6W77FGPbJ8hdquQ4pr_hxQ83ijqnLAKETZc5baM/edit" class="btn_primary">Sign Up</a>
+        </div>
+      </div>
+    </div>
+    <ul class="mobile_menu">
+      <li class="header_left_list_item">
+        <a href="./findtool.html">Find Tool</a>
+      </li>
+      <li class="header_left_list_item">
+        <a href="./hiretalent.html">Hire Talent</a>
+      </li>
+      <li class="header_left_list_item">
+        <a href="./aioasis.html">AI-Oasis</a>
+      </li>
+      <li class="header_left_list_item">
+        <div class="header_search">
+          <input type="search" placeholder="Search" name="search" class="search_input">
+          <div class="search_icons">
+            <img src="./Assets/Search_icon.png" alt="Search Icon" class="icon">
+            <img src="./Assets/dropdown_icon.png" alt="Dropdown Icon" class="icon">
+          </div>
+        </div>
+      </li>
+      <li class="header_left_list_item">
+        <button class="btn_secondary_outline">Log In</button>
+      </li>
+      <li class="header_left_list_item">
+        <a href="https://docs.google.com/forms/d/1PfHA6W77FGPbJ8hdquQ4pr_hxQ83ijqnLAKETZc5baM/edit" class="btn_primary">Sign Up</a>
+      </li>
+    </ul>
+  </header>
+    <!-- Summary Section -->
+    <div class="container mx-auto section flex-container summary-section md:flex-row items-center py-6 md:my-14">
+      <div class="md:w-1/2">
+          <img src="./Assets/download.jpeg" alt="Summary Image" class="rounded-lg">
+      </div>
+      <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-4">Why AI Oasis</h2>
+          <p class="text-base mb-8">AI-Oasis is dedicated to providing the latest updates, research, and resources in the field of artificial intelligence. Our mission is to make AI knowledge accessible to everyone.</p>
+          <p class="text-base mb-8">Explore our comprehensive articles, tutorials, and tools to stay ahead in the AI landscape.</p>
+      </div>
+  </div>
+
+  <!-- Roadmap Section -->
+  <div class="container mx-auto section flex-container roadmap-section md:flex-row-reverse items-center py-6 md:my-14">
+      <div class="md:w-1/2">
+          <img src="./Assets/Screenshot 2024-05-20 083522.png" alt="Roadmap Image" class="rounded-lg">
+      </div>
+      <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-4">Road Map</h2>
+          <ul class="list-disc pl-5 mb-8">
+              <li class="mb-4">
+                  <h3 class="text-xl font-semibold">Q4 2024</h3>
+                  <p>Strategically introducing the AOC token to the market through a meticulously planned launch.</p>
+              </li>
+              <li class="mb-4">
+                  <h3 class="text-xl font-semibold">Q5 2024</h3>
+                  <p>Exploring partnerships with mobile money providers to develop regulatory frameworks for AOC token usage within Africa's evolving financial ecosystem.</p>
+              </li>
+              <li class="mb-4">
+                  <h3 class="text-xl font-semibold">Q1 2025</h3>
+                  <p>Integrate content tokenization protocols, allowing creators to offer tokenized content alongside AI models, enriching the platform's offerings and creating new revenue streams.</p>
+              </li>
+              <li class="mb-4">
+                  <h3 class="text-xl font-semibold">Q2 2025</h3>
+                  <p>Establishing dedicated programs and allocating resources to support African AI startups.</p>
+              </li>
+          </ul>
+          <a href="./Assets/raod map.pdf" class="btn_primary" target="_blank">View Road Map PDF</a>
+      </div>
+  </div>
+
+  <!-- White Paper Section -->
+  <div class="container mx-auto section flex-container whitepaper-section md:flex-row items-center py-6 md:my-14">
+      <div class="md:w-1/2">
+          <img src="./Assets/White Paper.png" alt="White Paper Image" class="rounded-lg">
+      </div>
+      <div class="md:w-1/2">
+          <h2 class="text-3xl font-bold mb-4">White Paper</h2>
+          <p class="text-base mb-8">Our white paper outlines the vision, strategy, and technical details behind AI-Oasis. It provides an in-depth look at our goals, the technologies we employ, and the roadmap for the future.</p>
+          <a href="./Assets/AI OASIS.pdf" class="btn_primary" target="_blank">View White Paper PDF</a>
+      </div>
+  </div>
+
+
+      
+  <footer class="footer">
+    <div class="wrapper">
+      <div class="footer_top">
+        <div class="footer_logo_section">
+          <div class="footer_logo">
+            <img src="./Assets/AI OASIS-1.png" alt="Logo">
+          </div>
+          <div class="footer_social_contact">
+            <div class="footer_social">
+              <ul class="footer_middle_left_list">
+                <li class="footer_icons"><a href="#"><img src="./Assets/facebook-color-svgrepo-com.svg" alt="Facebook"></a></li>
+                <li class="footer_icons"><a href="https://x.com/Ai_Oasis_market?t=Up9o-K_CrrljSe0mqHQnWQ&s=09"><img src="./Assets/twitter-color-svgrepo-com.svg" alt="Twitter"></a></li>
+                <li class="footer_icons"><a href="http://t.me/Ai_Oasis_market"><img src="./Assets/telegram-svgrepo-com.svg" alt="Instagram"></a></li>
+              </ul>
+            </div>
+            <div class="footer_contact">
+            <a href="mailto:hello@aioasis.online">hello@aioasis.online</a></p>
+            </div>
+          </div>
+        </div>
+        <div class="footer_top_list">
+          <h5>For Clients</h5>
+          <ul>
+            <li><a href="#">How to Hire</a></li>
+            <li><a href="#">AI Marketplace</a></li>
+            <li><a href="#">Project Catalog</a></li>
+            <li><a href="#">Find Tools</a></li>
+          </ul>
+        </div>
+        <div class="footer_top_list">
+          <h5>Resources</h5>
+          <ul>
+            <li><a href="#">Help & Support</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">Community</a></li>
+            <li><a href="#">Business tools</a></li>
+          </ul>
+        </div>
+        <div class="footer_top_list">
+          <h5>Company</h5>
+          <ul>
+            
+            <li><a href="#">About Us</a></li>
+            <li><a href="./Assets/AI OASIS.pdf">White Paper</a></li>
+            <li><a href="./Assets/raod map.pdf">Roadmap</a></li>
+            <li><a href="#">Investor Relations</a></li>
+            
+          </ul>
+        </div>
+      </div>
+      <div class="footer_bottom">
+        <p>© 2024 AIOasis.</p>
+        <ul class="footer_bottom_list">
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+
+
+
+
+<script src="./script.js"></script>
+</body>
+</html>
+

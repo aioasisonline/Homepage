@@ -1,0 +1,108 @@
+/*Common css start*/
+
+.wrapper {
+    width: var(--width);
+    margin: auto;
+  }
+  
+  .btn_primary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary-light-2);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary-light-2);
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    padding: 1rem 2.5rem;
+    cursor: pointer;
+  }
+
+  .btn_primary:hover {
+    background-color: var(--stone-pink);
+  }
+  
+  .btn_secondary {
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--white);
+    padding: 1rem 2.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_secondary:hover {
+    background-color: var(--primary-dark);
+  }
+  
+  .btn_secondary_outline {
+    background-color: var(--white);
+    border: 1px solid var(--primary);
+    /* border: none; */
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: var(--primary);
+    padding: 1rem 2.5rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn_secondary_outline:hover {
+    background-color: var(--primary-light);
+  }
+  
+  /* Common text styles for all sections */
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #333;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-top: 0;
+  font-weight: bold;
+}
+
+p {
+  margin-top: 0;
+}
+
+a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  /* Adjustments for smaller screens */
+  body {
+      font-size: 14px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media screen and (max-width: 576px) {
+  /* Further adjustments for extra small screens */
+  body {
+      font-size: 12px; /* Decrease font size for extra small screens */
+  }
+}
+
+/* Add space between sections */
+.section_1,
+.section_3,
+.section_5,
+.section_6,
+.footer {
+  margin-bottom: 50px;
+}
+
+
+

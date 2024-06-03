@@ -1,0 +1,140 @@
+/* Footer Styles */
+.footer {
+  padding: 30px 20px; 
+  margin-top: 50px; 
+  background-color: var(--primary-dark);
+  display: flex;
+  flex-direction: column;
+  text-align: center; 
+}
+
+.footer_top {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: center; 
+  gap: 20px; 
+}
+
+.footer_logo_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center align items */
+}
+
+.footer_logo img {
+  width: 80px; /* Adjust the width to reduce the logo size */
+  margin-bottom: 20px; /* Space below the logo */
+}
+
+.footer_social_contact {
+  margin-top: 20px;
+}
+
+.footer_social h5, .footer_contact h5 {
+  font-size: 1.2rem;
+  font-weight: 700; /* Make the header bold */
+  color: var(--grey-light);
+  margin-bottom: 10px;
+}
+
+.footer_social ul {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Center align icons */
+}
+
+.footer_icons {
+  border-radius: 50%;
+  border: 1px solid var(--stone-pink);
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.footer_icons:hover {
+  background-color: var(--stone-pink);
+}
+
+.footer_icons img {
+  filter: var(--svg-white);
+  height: 14px;
+}
+
+.footer_top_list {
+  margin-left: 20px; /* Add space between each list section */
+}
+
+.footer_top_list h5 {
+  font-size: 1.2rem;
+  font-weight: 700; /* Make the header bold */
+  color: var(--grey-light);
+}
+
+.footer_top_list ul {
+  margin: 20px 0; /* Adjust margin */
+}
+
+.footer_top_list ul li {
+  margin-bottom: 10px;
+}
+
+.footer_top_list ul li a {
+  font-size: 1.1rem; /* Adjust font size */
+  font-weight: 400;
+  color: var(--white);
+  text-decoration: none;
+  line-height: 20px;
+  transition: text-decoration 0.2s ease;
+}
+
+.footer_bottom {
+  display: flex;
+  justify-content: center; /* Center align items horizontally */
+  align-items: center; /* Center align items vertically */
+  color: var(--white);
+  font-size: 1.2rem;
+  font-weight: 400;
+  margin-top: 30px; /* Add space between top and bottom sections */
+}
+
+.footer_bottom p {
+  padding-right: 20px;
+  margin-right: 20px;
+  border-right: 1px solid var(--white);
+}
+
+.footer_bottom_list li {
+  margin-right: 10px;
+}
+
+/* Media Query for smaller screens */
+@media (max-width: 767px) {
+  .footer_top {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+  
+  .footer_top_list {
+    margin: 0; /* Remove left margin */
+    text-align: center; /* Center align text */
+  }
+  
+  .footer_bottom {
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center align items */
+  }
+  
+  .footer_bottom p {
+    border: none; /* Remove border from paragraph */
+    margin: 0 0 10px 0; /* Adjust margin */
+  }
+}
+a {
+  color: #007bff;
+  text-decoration: none;
+}
